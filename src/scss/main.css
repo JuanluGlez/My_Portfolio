@@ -1,0 +1,1481 @@
+@charset "UTF-8";
+/*Fade in*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* line 7, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_animations.scss */
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
+
+/* line 22, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_animations.scss */
+.fade-in.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+/* line 28, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_animations.scss */
+.fade-in.two {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  animation-delay: 1.0s; }
+
+/* line 34, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_animations.scss */
+.fade-in.three {
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s; }
+
+/*Rotación eje z*/
+@-webkit-keyframes girando {
+  from {
+    -webkit-transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(-360deg); } }
+
+/* line 48, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_animations.scss */
+#contenedor {
+  margin: 30px auto;
+  -webkit-perspective: 200px; }
+
+/* line 53, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_animations.scss */
+.girando {
+  -webkit-animation-name: girando;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 0.5s;
+  -webkit-transform-style: preserve-3d; }
+
+/* Typo General */
+/* line 3, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+body {
+  font-family: open sans, sans-serif;
+  color: #1E100D;
+  line-height: 19px; }
+
+/* line 9, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+h1, h2, h3 {
+  font-family: overlock, sans-serif; }
+
+/* line 13, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+h1 {
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 40px; }
+
+/* line 19, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+h2 {
+  font-weight: 800;
+  font-size: 28px; }
+
+/* line 24, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+h3 {
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 25px; }
+
+/* line 30, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+h4 {
+  font-weight: 700;
+  font-size: 18px; }
+
+/* line 35, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+h5 {
+  font-weight: 600;
+  font-size: 17px; }
+
+/* line 40, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+h6 {
+  font-weight: 600;
+  font-size: 16px; }
+
+/* line 45, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+p {
+  font-family: open sans, sans-serif;
+  font-weight: 100;
+  font-size: 15px; }
+
+/* Typo Specific */
+/* line 54, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+.nav-link {
+  color: #1E100D;
+  border-radius: 5px;
+  font-weight: 600;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 15px; }
+
+/* line 63, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+.nav-link:hover {
+  background-color: #FFE120; }
+
+/* line 67, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+.link {
+  text-decoration: underline;
+  font-weight: 100;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 4px;
+  color: #1E100D;
+  font-style: italic; }
+
+/* line 77, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+.link:hover {
+  text-decoration: none;
+  background-color: #FFE120; }
+
+/* line 82, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+blockquote {
+  margin: 0;
+  font-style: italic; }
+
+/* line 87, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+dt {
+  font-size: 15px;
+  font-weight: 600; }
+
+/* line 92, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+a {
+  text-decoration: none;
+  color: black; }
+
+/* line 97, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+s {
+  color: lightgray; }
+
+/* line 101, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+dd {
+  margin-left: 15px; }
+
+/* line 105, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+hr {
+  border: 1px solid #1E100D;
+  border-radius: 100px;
+  width: 200px; }
+
+/* MQ */
+@media only screen and (min-width: 742px) {
+  /* line 116, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  .shown-color {
+    margin-right: 5px;
+    margin-bottom: 0px; }
+  /* line 122, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  h1 {
+    font-weight: 900;
+    font-size: 38px; }
+  /* line 127, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  h2 {
+    font-weight: 800;
+    font-size: 30px; }
+  /* line 132, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  h3 {
+    font-weight: 900;
+    font-size: 24px; }
+  /* line 137, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  h4 {
+    font-weight: 600;
+    font-size: 20px; }
+  /* line 142, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  h5 {
+    font-weight: 600;
+    font-size: 19px; }
+  /* line 147, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  h6 {
+    font-weight: 600;
+    font-size: 18px; }
+  /* line 152, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_typo.scss */
+  p {
+    font-family: open sans, sans-serif;
+    font-weight: 100;
+    font-size: 15px; } }
+
+/* line 1, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_buttons.scss */
+.button {
+  font-family: open sans, sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(50, 50, 50, 0);
+  border: 1px #1E100D solid;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s; }
+  /* line 11, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_buttons.scss */
+  .button-form {
+    border: 2px solid #1E100D;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(50, 50, 50, 0);
+    letter-spacing: 1px;
+    transition: all 0.3s ease 0s;
+    margin-left: 19px; }
+  /* line 23, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_buttons.scss */
+  .button-form:hover {
+    background-color: #1E100D;
+    border-color: #1E100D;
+    border-style: solid;
+    color: #FFE120; }
+
+/* line 31, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_buttons.scss */
+.button:hover {
+  background-color: #FFE120;
+  border-color: #1E100D;
+  border-style: solid; }
+
+/* Nav mobile */
+/* line 3, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.hmbrgr-nav {
+  text-align: center;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-color: #FFFFFF;
+  padding-top: 10px;
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #ffe120 98%, #d1b91a 100%);
+  z-index: 20; }
+
+/* line 18, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.hmbrgr-nav .hmbrgr-ul .hmbrgr-li {
+  width: 90%;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 55px; }
+
+/* line 25, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.hmbrgr-ul-spacer {
+  margin-top: 65px; }
+
+/* line 29, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.hmbrgr-nav li {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 100px; }
+
+/* Icons */
+/* line 37, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.logo_nav {
+  width: 90%;
+  max-width: 175px;
+  margin-top: 10px;
+  margin-right: 15px; }
+
+/* line 44, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.nav-icon {
+  margin: 0 auto;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*.cv-icon {
+    background-image:url(img/svg/icon-cv-inactive.svg);
+}
+
+.port-icon {
+    background-image:url(img/svg/icon-portfolio-inactive.svg);
+}
+
+.cntct-icon {
+    background-image:url(img/svg/icon-contact-inactive.svg);
+}}*/
+/* line 64, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.li-nav {
+  margin-top: 40px; }
+
+/* line 69, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.page-container {
+  width: 100%;
+  float: left;
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+  z-index: 10; }
+
+/* Nav settings */
+/* line 80, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+#main-check {
+  display: none; }
+
+/* line 84, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.main-check {
+  display: none; }
+
+/* line 88, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+#main-check:checked ~ nav {
+  width: 57%;
+  padding: 10px; }
+
+/* Nav icon */
+/* line 96, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+.hmbrgr-label {
+  content: url("../img/hmnrgr-label-01.svg");
+  position: fixed;
+  cursor: pointer;
+  padding: 8px 7px 7px 7px;
+  top: 42px;
+  right: 30px;
+  background-color: white;
+  border: 1px solid #FAFAFA;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.3);
+  z-index: 30; }
+
+/* line 111, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+#main-check:checked ~ label {
+  content: url("../img/hmnrgr-label-02.svg");
+  padding: 8px 7px 7px 7px; }
+
+/* Desktop queries */
+@media all and (min-width: 735px) {
+  /* line 122, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+  .hmbrgr-label {
+    display: none; }
+  /* line 126, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+  .hmbrgr-nav {
+    width: 80%;
+    max-width: 600px;
+    height: 64px;
+    border: 1px solid black;
+    border-radius: 40px;
+    overflow: visible;
+    bottom: 49px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-top: 4px;
+    border: 1px #F2F2F2 solid;
+    box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.3);
+    /* IE10+ */
+    background-image: -ms-linear-gradient(left, white 98%, white 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, white 98%, white 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(left, white 98%, white 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(98, white), color-stop(100, white));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, white 98%, white 100%);
+    /* W3C Markup */
+    background-image: linear-gradient(to right, white 98%, white 100%); }
+  /* line 151, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+  .hmbrgr-nav .hmbrgr-ul .hmbrgr-li {
+    width: 90px;
+    display: inline-block;
+    margin: 15px;
+    margin-top: 21px; }
+  /* line 157, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+  .hmbrgr-ul {
+    float: right;
+    margin: 20px 6% 0px 0px; }
+  /* line 162, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+  .logo_nav {
+    float: left;
+    width: 90px;
+    margin-left: 20px;
+    margin-top: 11px; }
+  /* line 166, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+  .nav-icon {
+    width: 0;
+    height: 0;
+    margin: 0 auto; }
+  /* line 172, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_nav.scss */
+  .hmbrgr-nav li {
+    margin: 0px 30px;
+    float: left;
+    padding-top: 0px;
+    width: 70px; } }
+
+/* line 2, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 12, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 38, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 50, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 60, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 71, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 82, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 92, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 103, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 112, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 120, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 129, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 138, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 147, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 156, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 163, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 167, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 178, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 186, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 197, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 205, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 214, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 225, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 249, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 259, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 271, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 286, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 296, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 305, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 315, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 328, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 340, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 349, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 361, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 369, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 380, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 389, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 398, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 409, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 415, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 419, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_normalize.scss */
+li, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*body {word-wrap: break-word;}*/
+/* line 3, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.bodybackground {
+  background: #fad635;
+  background: -moz-radial-gradient(center, ellipse cover, #fad635 0%, #ffe120 53%, #ebc81a 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fad635), color-stop(53%, #ffe120), color-stop(100%, #ebc81a));
+  background: -webkit-radial-gradient(center, ellipse cover, #fad635 0%, #ffe120 53%, #ebc81a 100%);
+  background: -o-radial-gradient(center, ellipse cover, #fad635 0%, #ffe120 53%, #ebc81a 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #fad635 0%, #ffe120 53%, #ebc81a 100%);
+  background: radial-gradient(ellipse at center, #fad635 0%, #ffe120 53%, #ebc81a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fad635', endColorstr='#ebc81a', GradientType=1 ); }
+
+/* line 14, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.particles-div {
+  position: fixed;
+  width: 100%;
+  height: 100vh; }
+
+/*Section Header*/
+/* line 24, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.index-header {
+  height: 100vh;
+  position: relative;
+  text-align: center; }
+
+/* line 31, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.h-content-wapper {
+  position: relative;
+  width: 100%;
+  top: 30%; }
+
+@media all and (max-width: 375px) and (min-width: 318px) {
+  /* line 41, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .h-content-wapper {
+    top: 25%; } }
+
+@media only screen and (min-width: 768px) {
+  /* line 49, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .h-content-wapper {
+    top: 35%; } }
+
+@media only screen and (min-width: 1024px) {
+  /* line 57, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .h-content-wapper {
+    top: 25%; } }
+
+/*Section CV*/
+/* line 67, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sect-CV {
+  background-color: white;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 160px;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.32);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.32);
+  box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.32); }
+
+/* line 77, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.header-CV {
+  text-align: center;
+  background-color: white; }
+
+/* line 82, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.icons-cv-container {
+  text-align: center;
+  margin-top: 52px; }
+
+/* line 87, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.icon-CV-wrapper {
+  display: inline-block;
+  margin: 15px; }
+
+/* line 92, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.icon-CV {
+  width: 110px; }
+
+/* line 96, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.text-CV-container {
+  margin: 0 auto;
+  max-width: 570px; }
+
+/* line 101, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.text-CV-presentation, .text-CV-description {
+  margin: 20px 25px; }
+
+/* line 103, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.icons-social-container {
+  text-align: center; }
+
+/* line 107, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.icon-social {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* line 117, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.fb {
+  background-image: url(../img/icon-fb-inactive.svg); }
+
+/* line 118, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.ins {
+  background-image: url(../img/icon-INS-inactive-01.svg); }
+
+/* line 119, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.in {
+  background-image: url(../img/icon-in-inactive.svg); }
+
+/* line 120, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.gh {
+  background-image: url(../img/icon-GH-inactive-01.svg); }
+
+@media only screen and (min-width: 375px) {
+  /* line 124, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .icons-cv-container {
+    width: 300px;
+    margin: 0 auto; }
+  /* line 128, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .cv-hr {
+    margin-bottom: 50px; }
+  /* line 131, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .text-CV-presentation, .text-CV-description {
+    margin: 20px 50px; } }
+
+@media only screen and (min-width: 650px) {
+  /* line 138, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .text-CV-container {
+    height: 140px; }
+  /* line 141, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .text-CV-presentation, .text-CV-description {
+    max-width: 260px;
+    margin: 10px;
+    float: left; }
+  /* line 146, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .text-CV-presentation {
+    text-align: right; }
+  /* line 149, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .icons-social-container {
+    float: left;
+    margin-top: -60px;
+    margin-left: 75px; }
+  /* line 155, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .icon-social {
+    transition-property: background, border-radius;
+    transition-duration: 0.2s, 1s;
+    transition-timing-function: linear, ease-in;
+    transition-delay: 0s, 1s; }
+  /* line 161, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .fb:hover {
+    background-image: url(../img/icon-fb-active.svg); }
+  /* line 162, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .ins:hover {
+    background-image: url(../img/icon-INS-active-01.svg); }
+  /* line 163, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .in:hover {
+    background-image: url(../img/icon-in-active.svg); }
+  /* line 164, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .gh:hover {
+    background-image: url(../img/icon-GH-active-01.svg); } }
+
+@media only screen and (min-width: 760px) {
+  /* line 169, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .icons-cv-container {
+    width: 100%; } }
+
+/*Section Education and Experience*/
+/* line 177, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sec-edu-exp {
+  margin: 60px 25px; }
+
+/* line 182, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.subsection-hr {
+  width: 80px;
+  margin-left: 0px;
+  margin-top: -13px; }
+
+/* line 188, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.subsection-title {
+  margin-left: 10px; }
+
+/* line 192, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.subsection-ul {
+  margin-top: 55px; }
+
+/* line 194, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.subsection-li {
+  line-height: 5px;
+  margin-top: 50px; }
+
+@media only screen and (min-width: 375px) {
+  /* line 197, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .sec-edu-exp {
+    margin-left: 50px; } }
+
+@media only screen and (min-width: 500px) {
+  /* line 204, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .edu-exp-container {
+    width: 50%;
+    float: left;
+    border-top-right-radius: 10px; }
+  /* line 210, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .sec-edu-exp {
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 300px; }
+  /* line 218, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .sec-lang-container {
+    padding-left: 5%; }
+  /* line 222, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .sec-lang {
+    float: right;
+    width: 50%;
+    margin-top: -30px; }
+  /* line 228, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .langs-container {
+    padding-top: 50px;
+    width: 200px; } }
+
+@media only screen and (min-width: 1500px) {
+  /* line 235, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .sec-edu-exp {
+    margin-right: 50px; } }
+
+/*Section Languaje*/
+/* line 243, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sec-lang {
+  background-color: white;
+  padding-bottom: 80%;
+  max-height: 600px;
+  position: relative;
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.22);
+  -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.22);
+  box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.22); }
+
+/* line 254, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sec-lang-container {
+  margin: 25px;
+  padding-top: 60px; }
+
+/* line 259, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sec-lang-container:before {
+  content: url("../img/border-01.svg");
+  width: 20px;
+  height: 20px;
+  float: left;
+  top: 30px;
+  left: -20px;
+  position: absolute; }
+
+/* line 270, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.langs-container {
+  text-align: center;
+  margin-top: 50px;
+  line-height: 80px; }
+
+@media only screen and (min-width: 375px) {
+  /* line 277, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .sec-lang-container {
+    margin: 0px 40px; }
+  /* line 281, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .langs-container {
+    margin-left: 0px; } }
+
+@media only screen and (min-width: 527px) {
+  /* line 286, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .sec-lang {
+    padding-bottom: 400px;
+    border-bottom-left-radius: 20px; }
+  /* line 290, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .lang-circle {
+    width: 220px;
+    margin-top: 10px; }
+  /* line 294, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .langs-container {
+    text-align: center;
+    margin-top: -10px;
+    line-height: 80px; } }
+
+/*Section Software*/
+/* line 304, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sec-soft {
+  padding: 100px 0px 125px 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #1E100D; }
+
+/* line 314, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.subsection-hr-soft {
+  width: 90px;
+  margin-top: -13px;
+  margin-bottom: 20px;
+  border: 1px #1E100D solid; }
+
+/*Section Portfolio*/
+/* line 324, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sec-portfolio {
+  background-color: white;
+  position: relative;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.32);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.32);
+  box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.32); }
+
+/* line 337, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.port-mods-container {
+  margin: 0 auto;
+  padding-top: 5%; }
+
+/* line 342, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.port-mod {
+  border: 1px solid #F2F2F2;
+  border-radius: 5px;
+  width: 270px;
+  padding-bottom: 25px;
+  background-color: white;
+  margin-bottom: 20px;
+  display: inline-block;
+  box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.3);
+  transition: all 0.3s ease 0s; }
+
+/* line 356, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.port-mod:hover {
+  background-color: #FFE120;
+  border: 1px solid #FFE120; }
+
+/* line 361, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.port-img-min {
+  height: 170px;
+  width: 270px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 0 auto; }
+
+/* line 369, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.port-btn-seemore {
+  margin: 0px 0px 80px;
+  padding: 10px 40px; }
+
+/* line 374, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.port-btn-seemore:before {
+  content: "Ver más"; }
+
+/* line 378, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.port-btn-seeless:before {
+  content: "Ver menos"; }
+
+@media only screen and (min-width: 825px) {
+  /* line 383, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .port-mods-container {
+    width: 70%; } }
+
+@media only screen and (min-width: 1177px) {
+  /* line 389, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .port-mods-container {
+    width: 60%; } }
+
+@media only screen and (min-width: 1265px) {
+  /* line 396, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .port-mods-container {
+    width: 100%;
+    margin: 0 auto; } }
+
+/*Contact*/
+/* line 406, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.sec-contact {
+  float: left;
+  padding-top: 25%;
+  width: 70%;
+  margin: 19px;
+  position: relative; }
+
+/* line 414, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.cntct-form {
+  margin-top: 35px;
+  width: 250px; }
+
+/* line 419, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.cntct-fieldset {
+  border: 0px;
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-block;
+  width: 100%; }
+
+/* line 427, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.cntct-input {
+  border: 0px;
+  margin: 0px;
+  background-color: transparent;
+  width: 230px; }
+
+/* line 434, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.msg3 {
+  background-color: transparent;
+  border: 0px; }
+
+/* line 439, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+textarea::-webkit-input-placeholder {
+  color: #1E100D;
+  right: 20px;
+  border-bottom: 1px solid #DFC51D; }
+
+/* line 445, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+textarea:-moz-placeholder {
+  color: #1E100D; }
+
+/* line 448, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+textarea:-ms-input-placeholder {
+  color: #1E100D; }
+
+/* line 452, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+input::-webkit-input-placeholder {
+  color: #1E100D;
+  border-bottom: 1px solid #DFC51D; }
+
+/* line 456, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+input:-moz-placeholder {
+  color: #1E100D; }
+
+/* line 459, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+input:-ms-input-placeholder {
+  color: #1E100D; }
+
+/* line 462, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+input, textarea[placeholder] {
+  color: #1E100D;
+  font-weight: 700; }
+
+/*.checkicon {
+    content: url(../img/circle-check-128.png);
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 450px;
+    display: none;
+}*/
+/* line 483, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.error {
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 250px;
+  background: #1E100D;
+  color: #FFE120;
+  font-family: open sans, sans-serif;
+  font-weight: 900;
+  padding: 10px 20px;
+  box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.3);
+  border-radius: 5px; }
+
+/* line 498, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.error:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(30, 16, 13, 0);
+  border-right-color: #1E100D;
+  border-width: 10px;
+  margin-top: -9px; }
+
+@media only screen and (min-width: 315px) {
+  /* line 516, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .error {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 235px;
+    display: none;
+    background: #1E100D;
+    color: #FFE120;
+    font-family: open sans, sans-serif;
+    font-weight: 900;
+    padding: 8px 15px;
+    box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.3);
+    border-radius: 5px;
+    font-size: 14px; }
+  /* line 532, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .error:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(30, 16, 13, 0);
+    border-right-color: #1E100D;
+    border-width: 10px;
+    margin-top: -9px; } }
+
+@media only screen and (min-width: 676px) {
+  /* line 550, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .cntct-form {
+    width: 100%; }
+  /* line 554, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .msg {
+    position: relative; }
+  /* line 558, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .msg2 {
+    position: absolute;
+    top: 10px; }
+  /* line 564, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .msg3 {
+    background-color: #FFE120;
+    position: absolute;
+    left: 172px;
+    top: 8px; }
+  /* line 571, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .button-form {
+    margin-top: 40px; }
+  /* line 575, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .error {
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 450px;
+    background: #1E100D;
+    color: #FFE120;
+    font-family: open sans, sans-serif;
+    font-weight: 900;
+    padding: 10px 20px;
+    box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.3);
+    border-radius: 5px; }
+  /* line 590, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .error:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(30, 16, 13, 0);
+    border-right-color: #1E100D;
+    border-width: 10px;
+    margin-top: -9px; } }
+
+/* line 606, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+.main-footer {
+  color: #1E100D;
+  bottom: 0px;
+  padding: 30px 0px;
+  width: 100%;
+  float: left;
+  text-align: center; }
+
+@media only screen and (min-width: 700px) {
+  /* line 616, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .main-footer {
+    margin-bottom: 120px; } }
+
+@media only screen and (min-width: 700px) {
+  /* line 622, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_arquitecture.scss */
+  .contact-n-footer-wrapper {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto; } }
+
+/* line 1, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_accordion.scss */
+ul .inner {
+  overflow: hidden;
+  display: none; }
+
+/* line 5, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_accordion.scss */
+ul .inner.show {
+  display: block; }
+
+/* line 8, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_accordion.scss */
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  transition: background 0.3s ease; }
+
+/* line 13, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_accordion.scss */
+.accordion-mods-wrapper {
+  margin-bottom: 55px; }
+
+/* line 1, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.port-header {
+  text-align: center;
+  margin: 50px 15px; }
+
+/* line 6, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.port-partners {
+  margin: 30px 0px; }
+
+/* line 10, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.port-imgs-container {
+  line-height: 0; }
+
+/* line 14, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.port-img {
+  width: 100%; }
+
+/* line 18, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.port-footer {
+  background-color: #FFE120;
+  padding: 120px 5%;
+  float: left;
+  width: 90%;
+  text-align: center; }
+
+/* line 26, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.port-next-prev {
+  background-color: #1E100D;
+  width: 100%;
+  text-align: center;
+  line-height: 40px; }
+
+/* line 33, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.footer-link {
+  color: #FFE120;
+  padding: 9px 60px; }
+
+/* line 38, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+.footer-link:hover {
+  color: #1E100D;
+  background-color: #FFE120; }
+
+/*MQ Desktop*/
+@media all and (min-width: 735px) {
+  /*Position hack starts here*/
+  /* line 49, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+  .port-header {
+    position: fixed;
+    right: 9%;
+    width: 30%;
+    height: 400px; }
+  /* line 56, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+  .port-header-fixed {
+    position: fixed;
+    z-index: 1000;
+    bottom: 50%; }
+  /*Position hack ends here*/
+  /* line 64, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+  .port-header h1 {
+    margin-top: 10vh; }
+  /* line 69, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+  .port-img {
+    width: 50%;
+    max-width: 426px; }
+  /* line 74, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+  .port-imgs {
+    margin: 25px 45px; } }
+
+@media all and (min-width: 1000px) {
+  /* line 83, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+  .port-header {
+    right: 13%; } }
+
+@media all and (min-width: 1200px) {
+  /* line 90, C:/Users/juanluis/Desktop/www/01_Mi_Portfolio/src/scss/_port-architecture.scss */
+  .port-header {
+    right: 17%; } }
+
+/*# sourceMappingURL=main.css.map */

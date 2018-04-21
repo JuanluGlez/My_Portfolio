@@ -1,0 +1,161 @@
+/* Typo General */
+
+body {
+    font-family: $opensans;
+    color: $myblack;
+    line-height: 19px;
+}
+
+h1,h2,h3 {
+    font-family: $overlock;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 23px; 
+    line-height: 25px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;  
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 17px;  
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 16px;  
+}
+
+p {
+    font-family: $opensans;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+/* Typo Specific */
+
+.nav-link {
+    color: $myblack; 
+    border-radius: 5px;
+    font-weight: 600;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    background-color: $myyellow;
+}
+
+.link {
+    text-decoration:underline;
+    font-weight: 100;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 4px;
+    color: $myblack;
+    font-style:italic;
+}
+
+.link:hover {
+ text-decoration:none;  
+ background-color: $myyellow;
+}
+
+blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+dt {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+s {
+    color:lightgray;
+}
+
+dd {
+    margin-left: 15px;
+}
+
+hr {
+    border: 1px solid $myblack;
+    border-radius: 100px;
+    width: 200px;
+}
+
+
+/* MQ */
+
+@media only screen and (min-width:742px) {
+    
+    .shown-color{
+        margin-right: 5px;
+        margin-bottom: 0px;
+
+    }
+    
+    h1{
+    font-weight: 900;
+    font-size: 38px;
+}
+
+    h2 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+    h3 {
+    font-weight: 900;
+    font-size: 24px;  
+}
+
+    h4 {
+    font-weight: 600;
+    font-size: 20px;  
+}
+
+    h5 {
+    font-weight: 600;
+    font-size: 19px;  
+}
+
+    h6 {
+    font-weight: 600;
+    font-size: 18px;  
+}
+
+    p {
+    font-family: $opensans;
+    font-weight: 100;
+    font-size: 15px;
+}
+    
+}
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px"
+	 height="52px" viewBox="146.75 0 52 52" enable-background="new 146.75 0 52 52" xml:space="preserve">
+<g id="Capa_2">
+</g>
+<g id="Capa_1">
+	<polygon opacity="0.4" points="188.694,26.38 181.642,24.005 174.591,21.631 176.061,28.925 177.529,36.22 180.496,32.229 
+		182.142,34.689 186.844,30.98 184.363,28.821 	"/>
+	
+		<radialGradient id="SVGID_1_" cx="896.4658" cy="-9056.3965" r="17.0609" gradientTransform="matrix(1.1083 0 0 -0.1273 -820.9525 -1103.0824)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFE120"/>
+		<stop  offset="0.417" style="stop-color:#FFE120;stop-opacity:0.584"/>
+		<stop  offset="1" style="stop-color:#FFE120;stop-opacity:0.003"/>
+	</radialGradient>
+	<path opacity="0.9" fill="url(#SVGID_1_)" d="M172.602,47.594c10.289,0,18.631,0.986,18.631,2.203S182.891,52,172.602,52
+		c-10.293,0-18.635-0.986-18.635-2.203S162.309,47.594,172.602,47.594z"/>
+	<g>
+		<path d="M173.406,36.938c-10.011,0-18.155-8.145-18.155-18.156c0-10.011,8.145-18.155,18.155-18.155s18.155,8.145,18.155,18.155
+			C191.562,28.793,183.417,36.938,173.406,36.938z M173.406,1.9c-9.31,0-16.882,7.573-16.882,16.881
+			c0,9.308,7.572,16.881,16.882,16.881s16.882-7.573,16.882-16.881C190.288,9.473,182.716,1.9,173.406,1.9z"/>
+	</g>
+	
+		<ellipse fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" cx="173.406" cy="18.782" rx="11.068" ry="18.156"/>
+	
+		<ellipse fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" cx="173.406" cy="18.662" rx="18.155" ry="5.614"/>
+	<polygon fill="#FFFFFF" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		188.694,24.444 181.642,22.069 174.591,19.695 176.061,26.988 177.529,34.283 180.496,30.293 184.834,36.777 190.249,32.004 
+		184.363,26.886 	"/>
+</g>
+</svg>

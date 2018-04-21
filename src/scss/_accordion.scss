@@ -1,0 +1,15 @@
+ul .inner {
+  overflow: hidden;
+  display: none;
+}
+ul .inner.show {
+  display: block;
+}
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  transition: background .3s ease;
+}
+.accordion-mods-wrapper {
+    margin-bottom: 55px;
+}

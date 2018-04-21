@@ -1,0 +1,93 @@
+.port-header {
+    text-align: center;
+    margin:50px 15px;
+}
+
+.port-partners {
+    margin: 30px 0px;
+}
+
+.port-imgs-container {
+    line-height: 0;
+}
+
+.port-img{
+    width: 100%;
+}
+
+.port-footer{
+    background-color: $myyellow;
+    padding: 120px 5%;
+    float: left;
+    width: 90%;
+    text-align: center;
+}
+
+.port-next-prev{
+    background-color: $myblack;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.footer-link{
+    color: $myyellow;
+    padding: 9px 60px;
+}
+
+.footer-link:hover{
+    color: $myblack;
+    background-color: $myyellow;
+}
+
+/*MQ Desktop*/
+
+@media all and (min-width: 735px){
+   
+    
+    /*Position hack starts here*/
+    .port-header {
+        position: fixed;
+        right: 9%;
+        width: 30%;
+        height: 400px;
+}
+    
+    .port-header-fixed {
+        position: fixed;  
+	    z-index:1000;
+        bottom: 50%;;
+    }
+     /*Position hack ends here*/
+    
+    
+    .port-header h1{
+        margin-top: 10vh;
+        
+    }
+    
+    .port-img{
+        width: 50%;
+        max-width: 426px;
+}
+    
+    .port-imgs{
+    margin: 25px 45px;
+    
+}
+    
+}
+
+@media all and (min-width: 1000px){
+    
+    .port-header {
+        right: 13%;
+}
+}
+
+@media all and (min-width: 1200px){
+    
+    .port-header {
+        right: 17%;
+}
+}

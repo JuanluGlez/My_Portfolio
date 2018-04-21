@@ -1,0 +1,35 @@
+.button{
+    font-family: $opensans;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(50, 50, 50, 0);
+    border: 1px $myblack solid;
+    letter-spacing: 1px;
+    transition: all 0.3s ease 0s;
+    
+    &-form {
+        border: 2px solid $myblack;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: rgba(50, 50, 50, 0);
+        letter-spacing: 1px;
+        transition: all 0.3s ease 0s;
+        margin-left: 19px;
+    }
+    
+    &-form:hover {
+        background-color: $myblack;
+        border-color: $myblack;
+        border-style: solid;
+        color: $myyellow;
+    }
+}
+
+.button:hover {
+    background-color: $myyellow;
+    border-color: $myblack;
+    border-style: solid;
+}
